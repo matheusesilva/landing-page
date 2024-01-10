@@ -8,7 +8,7 @@ body {
 
 .footer, .nav {
     background-color: rgb(11, 11, 43);
-    color: orange;
+    color: white;
 }
 
 .nav {
@@ -24,6 +24,10 @@ body {
     font-size: 24px;
     font-weight: 900;
     padding: 1em 0;
+}
+
+.logo span {
+    color: orange;
 }
 
 ul {
