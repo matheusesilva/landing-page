@@ -1,49 +1,63 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
+    margin: 0;
+    color: rgb(11, 11, 43);
 }
 
-.banner, .footer, .nav {
-    background-color: #1F2937;
-    color: #e5e7eb;
-}
-
-.nav, .banner, .cards, .quote, .footer, .marketing {
-    padding: 1.5em 100px;
+.footer, .nav {
+    background-color: rgb(11, 11, 43);
+    color: orange;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 100px;
+    align-items: baseline;
+    padding: 0 20%;
+    flex-wrap: wrap;
+    gap: 0 2em;
 }
 
 .logo {
-    color: #faf9f8;
     font-size: 24px;
     font-weight: 900;
+    padding: 1em;
 }
 
 ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   gap: 1em;
-  color: #e5e7eb;
   font-size: 18px;
+  padding: 0;
+  margin-left: auto;
+  font-weight: bold;
 }
 
 a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: white;
 }
 
 .banner {
     display: flex;
-    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 20%;
+    gap: 15px 45px;
+    background-color: orange;
+}
+
+.banner .container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: max-content;
 }
 
 .banner .title {
@@ -53,16 +67,15 @@ a {
 
 .banner .text {
     font-size: 18px;
-    color: #e5e7eb;
 }
 
 .banner button {
-    background-color: #3882f6;
+    background-color: rgb(11, 11, 43);
     border-radius: 10px;
     width: fit-content;
     padding: 0.5em 2em;
     font-size: 18px;
-    color: #e5e7eb;
+    color: white;
     font-weight: 900;
     border: 0px;
     margin: auto;
@@ -71,8 +84,9 @@ a {
 .banner .image {
     width: 450px;
     height: 200px;
-    background-color: gray;
-    flex: none;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 3px solid white;
 }
 
 .cards {
@@ -81,6 +95,7 @@ a {
     justify-content: center;
     text-align: center;
     gap: 2em;
+    padding: 2em 20%;
 }
 
 .cards .title {
@@ -91,6 +106,7 @@ a {
 
 .cards .card {
     font-size: 18px;
+    font-weight: 600;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,16 +117,16 @@ a {
 .cards .image {
     width: 150px;
     height: 150px;
-    border: 3px solid #3882f6;
+    border: 3px solid orange;
     border-radius: 20px;
 }
 
 .quote {
     background-color: #e5e7eb;
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 200;
     font-style: italic;
-    padding: 2em 4em;
+    padding: 2em 30%;
 }
 
 .quote .author {
@@ -119,36 +135,53 @@ a {
     font-size: 24px;
     font-weight: 900;
     margin-top: 1em;
+    text-align: end;
+}
+
+.quote span {
+    color: gray;
 }
 
 .marketing {
     display: flex;
-    justify-content: space-between;
-    gap: 2em;
-    margin: 50px 100px;
-    background-color: #3882f6;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:1.5em;
+    margin: 3em 20%;
+    background-color: rgb(11, 11, 43);
     border-radius: 10px;
     color: #faf9f8;
+    padding: 2em;
 }
 
 .marketing .title {
     font-size: 24px;
     font-weight: 900;
+    margin-bottom: 0.4em;
+}
+
+.marketing .text span {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .marketing button {
     flex: none;
-    background-color: #3882f6;
+    background-color: orange;
     border: 3px solid #faf9f8;
     border-radius: 10px;
     padding: 0.5em 2em;
     font-size: 18px;
-    color: #faf9f8;
     font-weight: 900;
-    width: fit-content;
+    min-width: fit-content;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    padding: 0 20%;
+    text-align: center;
+    color: white;
 }
