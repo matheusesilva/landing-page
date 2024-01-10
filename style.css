@@ -29,6 +29,7 @@ body {
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   gap: 1em;
   font-size: 18px;
