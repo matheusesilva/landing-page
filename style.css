@@ -23,7 +23,7 @@ body {
 .logo {
     font-size: 24px;
     font-weight: 900;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 ul {
@@ -78,16 +78,16 @@ a {
     font-size: 18px;
     color: white;
     font-weight: 900;
-    border: 0px;
+    border: none;
     margin: auto;
 }
 
 .banner .image {
-    width: 450px;
-    height: 200px;
-    object-fit: contain;
     border-radius: 20px;
     border: 3px solid white;
+    object-fit: cover;
+    width: 100%;
+    max-width: 450px;
 }
 
 .cards {
@@ -163,13 +163,13 @@ a {
 
 .marketing .text span {
     font-weight: bold;
-    text-decoration: underline;
+    font-size: larger;
 }
 
 .marketing button {
     flex: none;
     background-color: orange;
-    border: 3px solid #faf9f8;
+    border: none;
     border-radius: 10px;
     padding: 0.5em 2em;
     font-size: 18px;
