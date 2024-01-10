@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+.banner, .footer, .nav {
+    background-color: #1F2937;
+    color: #e5e7eb;
+}
+
+.nav, .banner, .cards, .quote, .footer, .marketing {
+    padding: 1.5em 100px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.logo {
+    color: #faf9f8;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.banner {
+    display: flex;
+    gap: 2em;
+}
+
+.banner .title {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.banner .text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.banner button {
+    background-color: #3882f6;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.5em 2em;
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 900;
+    border: 0px;
+    margin: auto;
+}
+
+.banner .image {
+    width: 450px;
+    height: 200px;
+    background-color: gray;
+    flex: none;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.cards .title {
+    font-size: 36px;
+    font-weight: 900; 
+    flex: 0 100%;
+}
+
+.cards .card {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    gap: 0.5em;
+}
+
+.cards .image {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #3882f6;
+    border-radius: 20px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 2em 4em;
+}
+
+.quote .author {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 1em;
+}
+
+.marketing {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 50px 100px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    color: #faf9f8;
+}
+
+.marketing .title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.marketing button {
+    flex: none;
+    background-color: #3882f6;
+    border: 3px solid #faf9f8;
+    border-radius: 10px;
+    padding: 0.5em 2em;
+    font-size: 18px;
+    color: #faf9f8;
+    font-weight: 900;
+    width: fit-content;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
